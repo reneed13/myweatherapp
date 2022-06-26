@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App/title>
+  <script src="https://kit.fontawesome.com/5195c77314.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="src/script.js">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <form id="weatherSearch">
+          <div class="input-group mb-3">
+            <input type="search" class="form-control" placeholder="Search City" id="city-input">
+            <div class="input-group-append">
+            </div>
+            <button class="searchButtons" type="submit" id="button-search">Search</button>
+            <button type="button" id="current-location">Current Location</button>
+            <div id = "location"></div>
+        </div>
+    </form>
+
+      <h1 id="currentCity">
+        Weather
+      </h1>
+<br>
+      <p id="currentTime">
+      </p>
+      <div>
+      <ul class="weather-details">
+        <li id="current-Temp">  </li>
+        <li> H 69° / L 62° </li>
+        <li> Precipitation: 20% </li>
+        <li>Humidity: 78% </li>
+      </ul>
+    </div>
+      <br>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">"Don't knock the weather; nine-tenths 
+            of the people couldn't start a conversation
+            if it didn't change once in a while."
+            <br>
+            -Kin Hubbard</p>
+          </div>
+        </div>
+<br>
+      <div class="row">
+        <div class="col">
+          Monday
+          <br>
+          <i class="fa-solid fa-cloud"></i>
+           <br>
+          81° / 66° 
+        </div>
+        <div class="col">
+          Tuesday
+          <br>
+          <i class="fa-solid fa-cloud-rain"></i>
+          <br>
+          78° / 61° 
+        </div>
+        <div class="col">
+          Wednesday
+          <br>
+          <i class="fa-solid fa-cloud-rain"></i>
+          <br>
+          73° / 56° 
+        </div>
+        <div class="col">
+          Thursday
+          <br>
+          <i class="fa-solid fa-sun"></i>
+          <br>
+          82° / 63° 
+          <br>
+        </div>
+        <div class="col">
+          Friday
+          <br>
+          <i class="fa-solid fa-sun"></i>
+          <br>
+          88° / 69° 
+        </div>
+    
+        </div>
+
+      </div>
+
+    </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
