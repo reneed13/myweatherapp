@@ -1,0 +1,44 @@
+body {
+    border: 1px;
+  }
+  
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 20px;
+  }
+  ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  #currentTime {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .card {
+    position: fixed;
+    top: -175px;
+    left: 350px;
+    text-align: center;
+    border: 1px solid #885df1;
+  }
+  .row {
+    position: relative;
+    top: -125px;
+  }
+  .col {
+    font-size: larger;
+    text-align: center;
+  }
+  .fa-cloud {
+    font-size: 50px;
+  }
+  .fa-cloud-rain {
+    font-size: 50px;
+  }
+  .fa-sun {
+    font-size: 50px;
+  }
+  
