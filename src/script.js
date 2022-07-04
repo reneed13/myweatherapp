@@ -3,6 +3,9 @@ let now = new Date();
 let currentTime = document.querySelector("#currentTime");
 
 let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
@@ -18,6 +21,7 @@ let days = [
   "Saturday"
 ];
 let day = days[now.getDay()];
+return `${day} ${hours}:${minutes}`;
 
 let months = [
   "Jan",

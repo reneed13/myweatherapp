@@ -1,28 +1,30 @@
 body {
-    border: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
     top: 20px;
   }
   ul {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 0;
     list-style: none;
   }
-  
-  #currentTime {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  .weather-app-wrapper{
+    max-width: 600px;
+    margin:30px auto;
+  }
+  .weather-app {
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 8px;
   }
   
+
   .card {
-    position: fixed;
-    top: -175px;
-    left: 350px;
-    text-align: center;
-    border: 1px solid #885df1;
+   position: relative;
+   left: 275px;
+   bottom: 200px;
   }
   .row {
     position: relative;
