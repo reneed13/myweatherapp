@@ -21,7 +21,6 @@ let days = [
   "Saturday"
 ];
 let day = days[now.getDay()];
-return `${day} ${hours}:${minutes}`;
 
 let months = [
   "Jan",
@@ -46,7 +45,14 @@ function displayWeather(response) {
   let h1 = document.querySelector("#currentCity");
   h1.innerHTML = response.data.name;
   let temperature = document.querySelector("#current-Temp");
-  temperature.innerHTML = `${Math.round(response.data.main.temp)}F`;
+  temperature.innerHTML = `${Math.round(response.data.main.temp)}`;
+  let description = document.querySelector("#description");
+  let wind = document.querySelector("#wind");
+  let humidity = document.querySelector("#humidity");
+  description.innerHTML = response.data.weather[0].description;
+  humidity.innerHTML = response.data.main.humidity;
+  wind.innerHTML = Math.round(response.data.wind.speed);
+
 }
 
 function submitCity(event) {

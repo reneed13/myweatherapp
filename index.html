@@ -25,29 +25,37 @@
             <div id = "location"></div>
         </div>
     </form>
-
-      <h1 id="currentCity">
-        Weather
-      </h1>
-<br>
-      <p id="currentTime">
-      </p>
-      <div>
-      <ul class="weather-details">
-        <li id="current-Temp">  </li>
-        <li> H 69° / L 62° </li>
-        <li> Precipitation: 20% </li>
-        <li>Humidity: 78% </li>
+    <div class="overview">
+      <h1 id="currentCity"></h1>
+      <ul>
+        <li><span id="currentTime"></span></li>
+        <li id="description"></li>
       </ul>
-    
-      <small>
-        <a href="https://github.com/reneed13/myweatherapp" target="_blank"> Open-source code 
-        </a>
-        by Renee Hirsch
-      </small>
     </div>
+    
+    <div class="row">
+      <div class="col-6">
+        <div class="clearfix weather-temperature">
+          <div>
+            <strong id="current-Temp"></strong
+            ><span class="units"> °F</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <ul>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> m/h</li>
+        </ul>
+      </div>
       
+    </div>
   </div>
+  <small>
+    <a href="https://github.com/reneed13/myweatherapp" target="_blank"> Open-source code 
+    </a>
+    by Renee Hirsch
+  </small>
     </div>
     
   <script src="src/script.js"></script>

@@ -1,14 +1,23 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
   h1 {
-    position: relative;
-    top: 20px;
+    color: #0f0f0f;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 0;
   }
+  
   ul {
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
+  }
+  
+
+  li:first-letter {
+    text-transform: capitalize;
   }
   .weather-app-wrapper{
     max-width: 600px;
@@ -19,7 +28,12 @@ body {
     border: 1px solid green;
     border-radius: 8px;
   }
-  
+  .weather-temperature strong {
+    color: rgb(33, 33, 33);
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+  }
 
   .card {
    position: relative;
@@ -27,8 +41,7 @@ body {
    bottom: 200px;
   }
   .row {
-    position: relative;
-    top: -125px;
+    margin-bottom: 20px;
   }
   .col {
     font-size: larger;
