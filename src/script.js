@@ -53,6 +53,8 @@ function displayWeather(response) {
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = Math.round(response.data.wind.speed);
 
+  fahrenheitTemp = response.data.main.temp;
+
 }
 
 function submitCity(event) {
@@ -78,8 +80,29 @@ function showLocation(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
+function displayCelciusTemp(event) {
+  event.preventDefault();
+  let celciusTemp = (fahrenheitTemp - 32) * 5/9; 
+  let temperatureElement = document.querySelector("#current-Temp");
+  temperatureElement.innerHTML = Math.round(celciusTemp);
+
+}
+function displayfahrenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-Temp");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+
+}
+let fahrenheitTemp = null;
+
 let form = document.querySelector("#weatherSearch");
 form.addEventListener("submit", submitCity);
 
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", showLocation);
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", displayCelciusTemp);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayfahrenheitTemp);
