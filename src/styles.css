@@ -1,5 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   }
   h1 {
     color: #0f0f0f;
@@ -22,15 +23,18 @@ body {
   .weather-app-wrapper{
     max-width: 600px;
     margin:30px auto;
+  
   }
   .weather-app {
     padding: 20px;
-    border: 1px solid green;
+    border: 1px solid blue;
     border-radius: 8px;
+    background-color:lightgoldenrodyellow;
   }
 
   .weather-temperature .icon {
     margin-right: 5px;
+    padding-top: 10px;
     height: 64px;
     width: 64px;
   }
@@ -53,7 +57,14 @@ body {
   .weather-temperature .active:hover {
     text-decoration: none;
   }
-
+  .quote {
+    background-image: linear-gradient(rgb(150, 80, 150), salmon);
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: 2px dashed black;
+  }
   .weather-forecast {
     margin-top: 20px;
     text-align: center;
@@ -71,25 +82,17 @@ body {
 .wf-temps{
   font-size: 13px;
 }
-  .card {
-   position: relative;
-   left: 275px;
-   bottom: 200px;
-  }
-  .row {
-    margin-bottom: 20px;
-  }
-  .col {
-    font-size: larger;
-    text-align: center;
-  }
-  .fa-cloud {
-    font-size: 50px;
-  }
-  .fa-cloud-rain {
-    font-size: 50px;
-  }
-  .fa-sun {
-    font-size: 50px;
-  }
-  
+
+ .row {
+   margin-bottom: 20px;
+ }
+ .col {
+   font-size: larger;
+   text-align: center;
+ }
+
+ .fa-sun {
+   font-size: 50px;
+   padding-top: 10px;
+ }
+ 
